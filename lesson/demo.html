@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript and form</title>
+  </head>
+
+  <body>
+    <h1>Display name</h1>
+    <form id="f">
+      Firstname<br>
+      <input type="text" id="firstname"><br>
+      Lastname<br>
+      <input type="text" id="lastname"><br><br>
+      <button type="button" onclick="showName(f.firstname.value, f.lastname.value)">
+        Show name
+      </button>
+    </form>
+    <div id="results"></div>
+    <script>   
+      function showName(a, b) {  
+        let div = document.getElementById("results"); 
+        div.innerHTML = "<h3>" + a + " " + b + "</h3>";
+      } 
+    </script>
+ </body>
+</html>
