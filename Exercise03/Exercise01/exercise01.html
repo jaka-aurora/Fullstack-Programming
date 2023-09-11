@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 01 Week 3</title>
+    <script>
+        function changeImage(number) {
+            console.log(`number is ${number}`);
+            let image = document.getElementById("image");
+            image.src = `p${number}.jpg`;
+        }
+    </script>
+    <style>
+        img {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>Images</p>
+    <button onclick="changeImage(1)">1</button>
+    <button onclick="changeImage(2)">2</button>
+    <button onclick="changeImage(3)">3</button>
+    <button onclick="changeImage(4)">4</button>
+    <button onclick="changeImage(5)">5</button>
+    <button onclick="changeImage(6)">6</button>
+    <button onclick="changeImage(7)">7</button><br>
+    <img id="image" src="p1.jpg"/>
+</body>
+</html>
