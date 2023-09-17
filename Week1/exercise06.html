@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6 Week 1</title>
+</head>
+<body>
+    <p id="arrayline"></p>
+
+    <p>Count: <span id="arraycount"></span></p>
+
+    <p>Sum: <span id="arraysum"></span></p>
+
+    <p>Average: <span id="arrayaverage"></span></p>
+    
+    <script>
+    // define variables
+    let array = [11, 22, 33, 44];
+    let sum = 0;
+    let count = 0;
+    let average = 0;
+    let lines = '';
+    
+    // use for of loop to calculate sum and count
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i]
+    }
+    
+    for (let i = 0; i < array.length; i++) {
+        count ++
+    }
+    average += sum/count;
+       
+    // use for loop to create "lines" strings. One line is like "array[0] = 11" etc...
+    for (let i = 0; i < array.length; i++) {
+        lines += `array[${i}] = ${array[i]} <br>`;
+        console.log(`array[${i}] = ${array[i]}`);
+    }
+
+    // show all lines
+    document.getElementById("arrayline").innerHTML= lines;
+
+    // show count, sum and average
+    console.log(`Sum is ${sum}`);
+    console.log(`Count is ${count}`);
+    console.log(`Average is ${average}`);
+    document.getElementById("arraycount").innerHTML= count;
+    document.getElementById("arraysum").innerHTML= sum;
+    document.getElementById("arrayaverage").innerHTML= average;
+
+    </script> 
+</body>
+</html>

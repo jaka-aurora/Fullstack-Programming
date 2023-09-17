@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 Week 1</title>
+</head>
+<body>
+    <p id="unique"></p>
+
+    <script>
+        let n1 = 3;
+        let n2 = 5;
+        let n3 = 7;
+        const n = [n1, n2, n3]
+    
+        function findBiggestNumber(n) {
+            const biggest = Math.max(...n);
+            document.getElementById("unique").textContent = biggest;
+            console.log(`Biggest number is ${biggest}`)
+        }
+        console.log(`The numbers are: ${n1}, ${n2} and ${n3}`);
+        findBiggestNumber(n);
+    </script>
+</body>
+</html>

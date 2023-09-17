@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 Week 1</title>
+</head>
+<body>
+    <script>
+        let n1 = 3;
+        let n2 = 2;
+        let n3 = 7;
+        const n = [n1, n2, n3]
+    
+        function OddEven(n) {
+            let even = [];
+            let odd = [];
+            for(let i = 0; i < n.length; i++) {
+                if (n[i] % 2 == 0)
+                even.push(n[i]);
+                else 
+                odd.push(n[i]);
+            }
+            console.log(`The array of numbers is: ${n}`);
+            if (even.length > 0) {
+                console.log(`Even numbers in the array are: ${even}`);
+            } else {
+                console.log(`No even numbers found.`);
+            }
+            if (odd.length > 0) {
+                console.log(`Odd numbers in the array are: ${odd}`);
+            } else {
+                console.log(`No odd numbers found.`);
+            }
+        }
+        OddEven(n)
+    </script>
+</body>
+</html>
