@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="init();">
+    <ul id="mylist">
+      
+    </ul>
+    
+    <script>
+      let JSONFriendsObject = {
+        "friends":[
+          {"firstname":"Mari", "lastname":"Ranta", "email":"mari@email.com"},
+          {"firstname":"Kari", "lastname":"Ranta", "email":"kari@email.com"},
+          {"firstname":"Sari", "lastname":"Ranta", "email":"sari@email.com"}
+        ]}
+      
+      function init() {
+        let element = document.getElementById("mylist");
+        JSONFriendsObject.friends.forEach((friend) => { // forEach loop is useful when looping through an object.
+          let li = document.createElement("li");
+          let text = document.createTextNode(`${friend.firstname} ${friend.lastname} ${friend.email}`);
+          li.appendChild(text);
+          element.appendChild(li);
+        });
+    }
+  </script>
+  </body>
+</html>

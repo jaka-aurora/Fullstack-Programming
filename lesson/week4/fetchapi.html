@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 JSON</title>
+</head>
+<body>
+    <h1>Fetch API Example</h1>
+    
+    <script>
+      fetch('highscores.json') // does not work in a file protocol - it's a security issue
+        .then(response => response.json())  
+        .then(data => console.log(data))   
+        .catch(err => console.log('Request Failed', err));
+    </script>  
+    
+</body>
+</html>
