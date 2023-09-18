@@ -3,12 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Real estate for sale</h1>
     
-    <ul id="result"></ul>
+    <img src="images\talo1.jpg" alt="Talo1" class="houseImage">
+    <p id=address class="header">Address: </p>
+    <p>Size</p>
+    <p class="text">Text</p>
+    <p>Price</p>
+
+    <img src="images\talo2.jpg" alt="Talo1" class="houseImage">
+    <p id=address class="header">Address: </p>
+    <p>Size</p>
+    <p class="text">Text</p>
+    <p>Price</p>
+
+    <img src="images\talo3.jpg" alt="Talo1" class="houseImage">
+    <p id=address class="header">Address: </p>
+    <p>Size</p>
+    <p class="text">Text</p>
+    <p>Price</p>
+
+    <img src="images\talo4.jpg" alt="Talo1" class="houseImage">
+    <p id=address class="header">Address: </p>
+    <p>Size</p>
+    <p class="text">Text</p>
+    <p>Price</p>
+
+    <img src="images\talo5.jpg" alt="Talo1" class="houseImage">
+    <p id=address class="header">Address: </p>
+    <p>Size</p>
+    <p class="text">Text</p>
+    <p>Price</p>
 
     <script>
         async function fetchTalot() {
@@ -21,12 +50,10 @@
         }
         async function renderTalot() {
             let talot = await fetchTalot();
-            let ul = document.getElementById("result");
+            let p = document.getElementById("address");
             talot.forEach(talo => {
-                let li = document.createElement("li");
-                let text = document.createTextNode(`${talo.name} ${talo.image} ${talo.address} ${talo.size} ${talo.text} ${talo.price}`);
-                li.appendChild(text);
-                ul.appendChild(li);
+                let text = document.createTextNode(`${talo.address}`);
+                p.appendChild(text);
             });
         }
         renderTalot();
