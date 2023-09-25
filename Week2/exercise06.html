@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6 Week 2</title>
+    <style>
+
+        .container {
+            border: 5px solid aliceblue;
+            background-color:#8fbfc4;
+            width: 300px;
+            margin: 0 auto;
+            text-align:center;
+            justify-content: center;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            align-items: center;
+            justify-content: center;
+            background-image: url(images/speed.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        h2 {
+            color: aliceblue;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        button {
+            margin-top: 15px;
+            background-color: aliceblue;
+            font-weight: bold;
+        }
+        #result p {
+            font-weight: bold;
+            font-size: small;
+        }
+        #Min, #Sec, #Km {
+            margin-top: 5px;
+        }
+        input[type="text"] {
+            width: 80px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+
+        class SpeedCalculator {
+            constructor(hours, minutes, seconds, kilometers) {
+                this._hours = hours;
+                this._minutes = minutes; 
+                this._seconds = seconds;
+                this._kilometers = kilometers;
+            }
+
+            get kmhpace() {
+                return this.calcKmhPace();
+            }
+
+            set hours(newHours) { this._hours = newHours; }
+            set minutes(newMinutes) { this._minutes = newMinutes; }
+            set seconds(newSeconds) { this._seconds = newSeconds; }
+            set kilometers(newKilometers) { this._kilometers = newKilometers; }
+
+            get hours() { return this._hours; }
+            get minutes() { return this._minutes; }
+            get seconds() { return this._seconds; }
+            get kilometers() { return this._kilometers; }
+
+            calcKmhPace() {
+                return this._kilometers/(this._hours+(this._minutes/60)+(this._seconds/3600))
+            }
+        }
+
+        function calculateSpeed() {
+            const hours = parseFloat(document.getElementById("Hrs").value);
+            const minutes = parseFloat(document.getElementById("Min").value);
+            const seconds = parseFloat(document.getElementById("Sec").value);
+            const kilometers = parseFloat(document.getElementById("Km").value);
+
+            const speedCalculator = new SpeedCalculator(hours, minutes, seconds, kilometers);
+            const result = speedCalculator.kmhpace;
+
+            let p = document.getElementById("result");
+            p.innerHTML = `Speed is ${result.toFixed(2)} km/h`;
+        }
+    
+    </script>
+
+    <div class="container">
+        <h2>Speed Calculator</h2>
+        <form>
+            <input type="text" id="Hrs" placeholder="Hours"><br/>
+            <input type="text" id="Min" placeholder="Minutes"><br/>
+            <input type="text" id="Sec" placeholder="Seconds"><br/>
+            <input type="text" id="Km" placeholder="Kilometers"><br/>
+            <button type="button" onclick="calculateSpeed()">Calculate km/h speed</button>
+        </form>
+        <p id="result"></p>
+    </div>
+       
+</body>
+</html>

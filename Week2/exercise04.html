@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 Week 2</title>
+    <style>
+        #omg p:first-child {
+            font-weight: bold;
+            font-size: larger;
+            color:#33ff7c;
+        }
+        #omg p:last-child {
+            font-weight: bold;
+            font-size: larger;
+            color:#ff33c1;
+        }
+        #omg p {
+            font-weight: bold;
+            background: linear-gradient(to right, #33ff7c, #3399ff, #ff33c1);
+            -webkit-background-clip: text;
+            color: transparent;
+            background-size: 200% 100%;
+            animation: gradientMove 2s linear infinite;
+        }
+        @keyframes gradientMove {
+            0% { background-position: 0 0;}
+            50% { background-position: 50% 0;}
+            100% { background-position: 100% 0;}
+        }
+    </style>
+</head>
+<body>
+
+    <div id="omg"></div>
+
+    <script>
+        
+        function addtxt(text) {
+            const omg = document.getElementById("omg");
+            const newtxt = document.createElement("p");
+            newtxt.textContent = text;
+            omg.appendChild(newtxt);
+        }
+
+        addtxt("OMG - Lady Gaga start singing!")
+
+        let count = 1;
+        const int = setInterval(function() {
+            if (count <= 4) {
+                addtxt("NICE - fireworks!");
+                count++;
+            } 
+            else {
+                clearInterval(int);
+                setTimeout(function() {
+                    addtxt("WOW - It was the best concert in my life...");
+                }, 2000);
+            }
+        }, 5000);
+
+    </script>
+    
+</body>
+</html>

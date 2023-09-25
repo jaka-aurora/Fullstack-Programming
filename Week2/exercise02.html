@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 02</title>
+    <title>Exercise 2 Week 2</title>
     <script>
-        
+        const myFunctionWithCallback = (p1, p2, callback) => { // created function with three parameters, including callback
+            return callback(p1, p2) // calls callback function with p1 and p2 as arguments
+        }
+        const myFunc = (p1, p2) => `Pizza with ${p1} and ${p2}` // created function which takes parameters p1 and p2
+        // and returns a string 
+        const result = myFunctionWithCallback('ham', 'cheese', myFunc) // first function is called here with parameters
+        // myFunc is used as callback 
+        console.log(result)
+
+        // myFunctionWithCallback('ham', 'cheese', myFunc) is called, parameters 'ham' and 'cheese' as set as p1 and p2.
+        // parameters are given to the callback in line 2. Since myFunc is the third parameter of the first function, it is called as callback
+        // and 'ham' and 'cheese' are passed as it's arguments in line 5 which return the string.
+        // This is saved as a variable 'result' which is then logged with console.log in line 7. 
     </script>
 </head>
 <body>
