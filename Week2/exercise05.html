@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class Person {
+            constructor(name, age, phone, email) {
+                this.name = name;
+                this._age = age; // internal property for age of a person
+                this.phone = phone;
+                this.email = email;
+            }
+            get older() { // age changes so we need to save getting older under the age property too
+                return this._age; 
+            }
+
+            set age(newAge) { // so we are setting new, older age under age property
+                this._age = newAge; 
+            }
+
+            increaseAge() {  // age increases by one each time until it reaches 100
+                if (this._age < 100) {
+                    this._age++
+                } 
+            }
+        }
+
+        const person1 = new Person("Mary", 33, "023-454-5465","mary@email.fi")
+        const person2 = new Person("Ukko", 45, "023-455-6576","ukko@email.fi")
+        const person3 = new Person("Eeva", 19, "023-456-7576","eeva@email.fi")
+
+        console.log("Person 1:", person1);
+        console.log("Person 2:", person2);
+        console.log("Person 3:", person3);
+
+        person1.increaseAge(); // Mary is 34
+        person2.increaseAge(); // Ukko is 46
+        person3.increaseAge(); // Eeva is 20
+
+        console.log("Person 1:", person1);
+        console.log("Person 2:", person2);
+        console.log("Person 3:", person3);
+
+        person1.increaseAge(); // Mary is 35
+        person2.increaseAge(); // Ukko is 47
+        person3.increaseAge(); // Eeva is 21
+
+        console.log("Person 1:", person1);
+        console.log("Person 2:", person2);
+        console.log("Person 3:", person3);
+
+    </script>
+</body>
+</html>

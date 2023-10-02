@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const print = (str, taskTime) => {
+                    setTimeout(function() {
+                        console.log(`${str} finished!`)
+                    }, taskTime)
+                }
+      
+        const execute = (str, taskTime, callback)  => {  
+            callback(str, taskTime)
+        }
+        
+        console.log("Task1 to execution...")
+        execute('Task1', 2000, print)
+        
+        console.log("Task2 to execution...")
+        execute('Task2', 2000, print)
+        
+        console.log("Task3 to execution...")
+        execute('Task3', 500, print)
+        
+        console.log("Last code line executed!")
+
+    </script>
+    
+</body>
+</html>
+
+// when execute is called, it passes the parameter 'Task1' and 2000 as callback parameters str and taskTime
+// parameter 'print' is passed as the callback function so it "calls back" to the first lines which define what print is
+// print consists of a setTimeout function which prints out a string `${str} finished!` after a given amount of time 
+// print takes parameters 'Task1' and 2000 as arguments and passes them down to setTimeout
+// finally, this means that when we call execute('Task1', 2000, print) it will return the string in the console.log (all of them)
+// and after given amount of time, it will return the results of execute. First line will be 'Task 3 finished', then 'Task 1 finished' and lastly 'Task2 finished'
+// this order is because Task3 has least amount of delay passed to the setTimeout function. 
+// Task 1 and Task 2 have the same delay so they will be returned in the order they are written. 
+
