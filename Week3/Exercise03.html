@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 Week 3</title>
+    <script>
+        let sum = 0;
+
+        function calculate() {
+            let t1 = document.getElementById("T1").value;
+            let t2 = document.getElementById("T2").value;
+            let t3 = document.getElementById("T3").value;
+            let t4 = document.getElementById("T4").value;
+
+            sum = parseInt(t1) + parseInt(t2) + parseInt(t3) + parseInt(t4);
+
+            let result = document.getElementById("result");
+            result.innerHTML = `Points (sum): ${sum}`;
+            grade(sum);
+        }
+
+        function grade(sum) {
+            let grade;
+            if (sum >= 0 && sum <= 12) {
+                grade = 0;
+            } 
+            else if (sum >= 13 && sum <= 15) {
+                grade = 1;
+            } 
+            else if (sum >= 16 && sum <= 17) {
+                grade = 2;
+            } 
+            else if (sum >= 18 && sum <= 19) {
+                grade = 3;
+            } 
+            else if (sum >= 20 && sum <= 21) {
+                grade = 4;
+            } 
+            else if (sum >= 22 && sum <= 24) {
+                grade = 5;
+            } 
+            else {
+                grade = "Invalid input";
+            }
+            let grd = document.getElementById("grd");
+            grd.innerHTML = `Grade: ${grade}`;
+        }
+    </script>
+     <style>
+        table {
+            border: 1px solid black;
+            padding: 3px;
+        }
+        th {
+            color: aliceblue;
+            background-color: #3498db
+        }
+        th, td {
+            padding: 3px;
+            text-align: center;
+        }
+        input {
+            width: 20px;
+            text-align: center;
+        }
+        #result, #grd {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Evaluation tool</h2>
+    <table>
+        <tr>
+            <th>T 1</th>
+            <th>T 2</th>
+            <th>T 3</th>
+            <th>T 4</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="T1" onblur="calculate()"></td>
+            <td><input type="text" id="T2" onblur="calculate()"></td>
+            <td><input type="text" id="T3" onblur="calculate()"></td>
+            <td><input type="text" id="T4" onblur="calculate()"></td>
+        </tr>
+    </table>
+    <div id="result"></div>
+    <div id="grd"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 Week 3</title>
+</head>
+<body>
+    <h2>Simple ToDo</h2>
+    <input type="text" id="item"><br>
+    <button onclick="addItem()">Add</button>
+    <button onclick="removeAll()">Remove List</button>
+    <ul id="list"></ul>
+
+    <script>
+        let list = [];
+
+        function addItem() {
+            let item = document.getElementById("item").value;
+            if (item.trim() !== '') {
+                list.push(item);
+                showList();
+            }
+        }
+
+        function removeAll() {
+            list = [];
+            showList();
+        }
+        
+        function showList() {
+            let listContainer = document.getElementById("list");
+            listContainer.innerHTML = '';
+
+            list.forEach(function(item) {
+                let listItem = document.createElement("li");
+                listItem.textContent = item;
+                listContainer.appendChild(listItem);
+            });
+        }
+    </script>
+     <style>
+        input {
+            width: 100px;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+    </style>
+</body>
+</html>

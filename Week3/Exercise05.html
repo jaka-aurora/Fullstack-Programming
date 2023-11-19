@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5 Week 3</title>
+    <style>
+        body {
+            border: 2px dashed;
+            
+            width: fit-content;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+        #colors, #theme {
+            margin: 10px 10px 10px 0px;
+        }
+        input {
+            width: 150px;
+            text-align: left;
+        }
+        button {
+            margin: 10px 10px 10px 0px;
+        }
+        div {
+            width: 250px;
+            border: 2px solid;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Party</h2>
+
+    <label for="colors">Select a party color:</label><br>
+    <select id="colors">
+        <option value="#fc0101">Red</option>
+        <option value="#0123fc">Blue</option>
+        <option value="#f2fc01">Yellow</option>
+        <option value="#0be500">Green</option>
+        <option value="#ff01b9">Pink</option>
+    </select><br>
+
+    <label for="theme">What is the party?</label><br>
+    <input type="text" id="theme" oninput="updateText()"><br>
+
+    <button onclick="changeColor()">Change to chosen background color</button>
+
+    <div id="result">
+        <h3>Result area</h3>
+        <p id="newcolor"></p>
+        <p id="newtheme"></p>
+    </div>
+
+    <script>
+        function changeColor() {
+            let colorSelect = document.getElementById("colors");
+            let colorCode = colorSelect.value;
+            let theme = document.getElementById("theme").value;
+
+            let resultArea = document.getElementById("result");
+            resultArea.style.backgroundColor = colorCode;
+            document.getElementById("newcolor").innerHTML = `Chosen color: ${colorCode}`;
+            document.getElementById("newtheme").innerHTML = `${theme}`;
+        }
+
+        function updateText() {
+            let theme = document.getElementById("theme").value;
+            let resultArea = document.getElementById("result");
+            document.getElementById("newtheme").innerHTML = `Theme: ${theme}`;
+        }
+    </script>
+</body>
+</html>

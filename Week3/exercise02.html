@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 02 Week 3</title>
+    <script>
+        let hcpdata = [
+            { "name": "Ari", "hcp": 54 }, 
+            { "name": "Pasi", "hcp": 5 }, 
+            { "name": "Seppo", "hcp": 20 } 
+        ];
+
+        function showHcp() {
+            let handicapList = document.getElementById('hcplist');
+            handicapList.innerHTML = '';
+            
+            for (let i = 0; i < hcpdata.length; i++) {
+                let listItem = document.createElement('li');
+                listItem.textContent = `${hcpdata[i].name}: ${hcpdata[i].hcp}`;
+                handicapList.appendChild(listItem);
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showHcp()">Show Handicaps</button>
+    <ul id="hcplist"></ul>
+</body>
+</html>
