@@ -37,8 +37,8 @@ Total points of exercises:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 [**WEEK4**](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week4):   
 [LAB04E1](Week4\Exercise1): 6/6p  
-[LAB04E2]():  
-[LAB04E3]():  
+[LAB04E2](Week4\Exercise2):  
+[LAB04E3](Week4\Exercise3):  
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 [**WEEK5**]():   
 [LAB05E1]():  
