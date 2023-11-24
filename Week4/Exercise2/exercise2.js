@@ -9,20 +9,30 @@ async function fetchTalot() {
 }
 
 async function renderTalot() {
-    let talot = await fetchTalot();
-    let reList = document.getElementById("reList");
-    
-    talot.forEach(talo => {
+    const talot = await fetchTalot();
+    const talotDiv = document.getElementById("talot");
+    talotDiv.innerHTML = "";
+
+    const sizeCheck = document.getElementById("sizeCheck").checked;
+    const priceCheck = document.getElementById("priceCheck").checked;
+
+    let filteredTalot = talot;
+    if (sizeCheck) {
+        filteredTalot = filteredTalot.filter(house => house.size < 200);
+    }
+    if (priceCheck) {
+        filteredTalot = filteredTalot.filter(house => house.price < 1000000);
+    }
+
+    filteredTalot.forEach(talo => {
         let taloContainer = document.createElement("div");
         taloContainer.classList.add("taloContainer");
 
         let taloImage = document.createElement("img");
         taloImage.src = talo.image;
-        taloImage.alt = talo.address;
         taloImage.classList.add("taloImage");
 
         let taloInfo = document.createElement("div");
-        taloInfo.classList.add("taloInfo");
 
         let address = document.createElement('p');
         address.classList.add('header');
@@ -46,7 +56,7 @@ async function renderTalot() {
         taloContainer.appendChild(taloImage);
         taloContainer.appendChild(taloInfo);
 
-        reList.appendChild(taloContainer);
+        talotDiv.appendChild(taloContainer);
     });
 }
 renderTalot()

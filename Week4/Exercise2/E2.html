@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Exercise 1 Week 4</title>
+    <title>Exercise 2 Week 4</title>
 </head>
 <body>
-    <h1>Real estate for sale</h1>
-
-    <div id="reList">
+    <h1>Real estate for sale</h1>    
+    <div>
+        <label>Size below 200 m2</label>
+        <input type="checkbox" id="sizeCheck" onchange="renderTalot()">
+        <label>Price below 1 000 000 €</label>  
+        <input type="checkbox" id="priceCheck" onchange="renderTalot()">
+    </div>
+        
+    <div id="talot">
         <!-- Houses here -->
     </div>
     

@@ -3,44 +3,44 @@
         "name":"Talo1", 
         "image":"images/talo1.jpg", 
         "address":"Lönnrotinkatu 3, 00120 , Helsinki", 
-        "size":"170", 
+        "size":170, 
         "text":"Granholmin suunnittelema vuonna 1896 valmistunut Kivipalatsi Pyyn korttelissa kuuluu tänäkin päivänä Helsingin kauneimpiin rakennuksiin.", 
-        "price":"700000"
+        "price":700000
     },
 
     {
         "name":"Talo2", 
         "image":"images/talo2.jpg", 
         "address":"Telakkakatu 3 A, 00150, Helsinki", 
-        "size":"180", 
+        "size":180, 
         "text":"Keittiöstä pariovet avaavat parvekkeen osaksi huonetilaa. Kaksi tilavaa kylpyhuonetta, toisessa amme. Joustavasti muunneltavia huonejakoja, paljon ikkunoita.", 
-        "price":"800000"
+        "price":800000
     },
 
     {
         "name":"Talo3", 
         "image":"images/talo3.jpg", 
         "address":"Lönnrotinkatu 3, 00120 , Helsinki", 
-        "size":"210", 
+        "size":210, 
         "text":"Tämän rauhallisen, täydellisesti saneeratun ja muuttovalmiin huoneiston sisäänkäynti on suojaisan sisäpihan puolella. Huoneiden ikkunat antavat Yrjönkadulle, avokeittiön ja kodinhoitohuoneen ikkunat ovat sisäpihalle.", 
-        "price":"900000"
+        "price":900000
     },
 
     {
         "name":"Talo4", 
         "image":"images/talo4.jpg", 
         "address":"Kunnallisneuvoksentie 8 A, 00930 Helsinki", 
-        "size":"190", 
+        "size":190, 
         "text":"Helsingin keskustan upeimmasta arvoyhtiöstä on nyt tarjolla kaupungin parhaimmat keskustanäkymät. Historiallinen Lackmanin talo on täydellisesti saneerattu uuteen loistoonsa rakennusyhtiö Hartelan johdolla vuonna 2011 kaunista arkkitehtuuria kunnioittaen.", 
-        "price":"1100000"
+        "price":1100000
     },
 
     {
         "name":"Talo5", 
         "image":"images/talo5.jpg", 
         "address":"Katajaharjuntie 18, 00200 Helsinki", 
-        "size":"220", 
+        "size":220, 
         "text":"Huikean kaunis ja laadukas kokonaisuus arvostetulla alueella meren läheisyydessä Marjaniemessä. Tämä moitteettomassa kunnossa oleva ja hyvin suunniteltu talokaunotar on rakennettu vuonna 2000 ja kuntotarkastettu elokuussa 2014.", 
-        "price":"1200000"
+        "price":1200000
     }
 ]

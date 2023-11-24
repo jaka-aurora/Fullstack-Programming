@@ -22,7 +22,6 @@ async function renderTalot() {
         taloImage.classList.add("taloImage");
 
         let taloInfo = document.createElement("div");
-        taloInfo.classList.add("taloInfo");
 
         let address = document.createElement('p');
         address.classList.add('header');

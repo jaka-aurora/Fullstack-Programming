@@ -1,0 +1,41 @@
+.container {
+    border: 5px solid mediumaquamarine;
+    background-color: antiquewhite;
+    padding: 15px 50px 50px 50px;
+    width: 300px;
+    margin: 0 auto;
+    text-align:center;
+    justify-content: center;
+    max-height: 100px;
+}
+
+.list {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#nameInput {
+    padding: 10px;
+    width: 200px;
+}
+
+#nameList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    border: 1px solid #ccc;
+    display: none;
+    text-align: left;
+}
+
+#nameList li {
+    padding: 10px;
+    cursor: pointer;
+    background-color: azure;
+}
+
+#nameList li:hover {
+    background-color: peachpuff;
+}
