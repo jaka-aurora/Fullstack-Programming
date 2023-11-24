@@ -37,25 +37,25 @@ Total points of exercises:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 [**WEEK4**](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week4):   
 [LAB04E1](Week4\Exercise1): 6/6p  
-[LAB04E2](Week4\Exercise2):  
-[LAB04E3](Week4\Exercise3):  
+[LAB04E2](Week4\Exercise2): 6/6p  
+[LAB04E3](Week4\Exercise3): 10/10p  
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-[**WEEK5**]():   
+[**WEEK5**](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week5):   
 [LAB05E1]():  
 [LAB05E2]():  
 [LAB05E3]():  
 [LAB05E4]():  
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-[**WEEK6**]():   
+[**WEEK6**](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week6):   
 [LAB06E1]():  
 [LAB06E2]():  
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-[**WEEK7**]():   
+[**WEEK7**](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week7):   
 [LAB07E1]():  
 [LAB07E2]():  
 [LAB07E3]():  
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-[**WEEK8**]():   
+[**WEEK8**](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week8):   
 [LAB08E1]():  
 [LAB08E2]():  
 [LAB08E3]():  
