@@ -1,17 +1,26 @@
-const express = require('express');
+const http = require('http');
 const fs = require('fs');
-const app = express();
-const port = 3000;
 
+const port = 3000;
 let counter = 0;
 
-app.get('/', (request, response) => {
-    counter++;
-    console.log('Request counter values is', counter)
-    response.send(`Request counter values is ${counter}`)
+const server = http.createServer((request, response) => {
+    if (request.url == '/') {
+        counter++;
+        console.log('Request counter values is', counter);
+        response.statusCode = 200;
+        response.setHeader('Content-Type', 'text/plain');
+        response.write(`Request counter value is ${counter}`);
+        response.end();
+    }
+    else {
+        response.statusCode = 404;
+        response.setHeader('Content-Type', 'text/plain');
+        response.end('Not Found')
+    }
 });
 
-app.listen(port, () => {
+server.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`)
 });
 
