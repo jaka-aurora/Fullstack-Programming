@@ -50,7 +50,7 @@ Total points of exercises:
 [LAB06E1](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week6/Exercise1): 10/10p    
 [LAB06E2](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week6/Exercise2): 5/5p  
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-[**WEEK7**](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week7):  
+[**WEEK7**](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week7): DONE  
 [LAB07E1](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week7/Exercise1): 5/5p  
 [LAB07E2](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week7/Exercise2): 5/5p  
 [LAB07E3](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week7/Exercise3): 10/10p  
