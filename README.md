@@ -22,18 +22,18 @@ Total points of exercises:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 [**WEEK2**](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week2): DONE  
 [LAB02E1](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/blob/master/Week2/exercise01.html): 4/4p  
-[LAB02E2](Week2\exercise02.html): 4/4p  
-[LAB02E3](Week2\exercise03.html): 4/4p  
-[LAB02E4](Week2\exercise04.html): 4/4p  
-[LAB02E5](Week2\exercise05.html): 4/4p  
-[LAB02E6](Week2\exercise06.html): 6/6p  
+[LAB02E2](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week2/exercise02.html): 4/4p  
+[LAB02E3](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week2/exercise03.html): 4/4p  
+[LAB02E4](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week2/exercise04.html): 4/4p  
+[LAB02E5](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week2/exercise05.html): 4/4p  
+[LAB02E6](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week2/exercise06.html): 6/6p  
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 [**WEEK3**](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week3): DONE  
-[LAB03E1](Week3\Exercise01): 4/4p  
-[LAB03E2](Week3\exercise02.html): 4/4p  
-[LAB03E3](Week3\Exercise03.html): 4/4p  
-[LAB03E4](Week3\Exercise04.html): 6/6p  
-[LAB03E5](Week3\Exercise05.html): 6/6p  
+[LAB03E1](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week3/Exercise01): 4/4p  
+[LAB03E2](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week3/exercise02.html): 4/4p  
+[LAB03E3](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week3/Exercise03.html): 4/4p  
+[LAB03E4](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week3/Exercise04.html): 6/6p  
+[LAB03E5](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week3/Exercise05.html): 6/6p  
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 [**WEEK4**](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week4): DONE  
 [LAB04E1](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week4/Exercise1): 6/6p  
