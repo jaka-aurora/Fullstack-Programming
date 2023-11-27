@@ -28,50 +28,6 @@ input[type="text"] {
   font-size: 15px;
 }
 
-button {
-  background-color:transparent;
-  border: 1px transparent;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-#addTodoButton {
-  background-color: #ffffff;
-  border: 1px solid green;
-  margin: 15px;
-  padding: 5px 15px;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-#addTodoButton:hover {
-  background-color: green;
-}
-
-.edit {
-    font-weight: bold;
-    color: #4266b3;
-    cursor: pointer;
-  }
-
-.button-update {
-    background-color: orangered;
-}
-  
-.delete-button {
-  cursor: pointer;
-  color: rgb(178, 0, 0);
-  font-weight: bold;
-  padding-left: 3px;
-}
-
-.edit-button {
-  cursor: pointer;
-  color: blue;
-  font-weight: bold;
-  padding-left: 3px;
-}
-
 ul {
   list-style-type:circle solid;
   margin: 0px 0 20px 0;
@@ -80,4 +36,39 @@ ul {
 
 li {
     padding: 5px;
+}
+
+.delete {
+  cursor: pointer;
+  color: rgb(178, 0, 0);
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+.edit {
+  font-weight: bold;
+  color: #4266b3;
+  cursor: pointer;
+}
+
+#saveEdit {
+  background-color: #ffffff;
+  border: 1px solid green;
+  margin: 15px;
+  padding: 5px 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#saveEdit:hover {
+  background-color: green;
+}
+
+.edit-button {
+  background-color: rgb(255, 204, 0);
+  border: 1px solid rgb(128, 60, 0);
+  margin: 15px;
+  padding: 5px 15px;
+  font-size: 15px;
+  cursor: pointer;
 }

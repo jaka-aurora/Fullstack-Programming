@@ -55,7 +55,7 @@ Total points of exercises:
 [LAB07E2](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week7/Exercise2): 5/5p  
 [LAB07E3](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week7/Exercise3): 10/10p  
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-[**WEEK8**](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week8):  
+[**WEEK8**](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week8):  Half-done
 [LAB08E1](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week8/Exercise1): 10/10p  
-[LAB08E2](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week8/Exercise2): 5/10p  
-[LAB08E3](): 0/5p  
+[LAB08E2](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week8/Exercise2): 5/10p - I had trouble with the dynamically changing button for Add and Save (edit). I couldn't make it revert between two without breaking the whole thing. Adding, Deleting and Updating of tasks in the To Do list works, only the Save button which appears doesn't revert to Add after updating a task. One needs to reload the page to get Add again.   
+[LAB08E3](): 0/5p I was unable to complete this task. 
