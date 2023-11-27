@@ -1,0 +1,83 @@
+body {
+  font-family: "Gill Sans", sans-serif;
+}
+
+#infoText {
+  font-style: italic;
+  text-align: center;
+}
+
+#container {
+  width:fit-content;
+  background-color:rgb(184, 226, 184);
+  border-radius: 3px;
+  padding: 0px 0px 0px 15px;
+  margin: 10px auto;
+  border: 1px solid #ddd;
+}
+
+h1 {
+  text-align: left;
+  color: green;
+}
+
+input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 300px;
+  font-size: 15px;
+}
+
+button {
+  background-color:transparent;
+  border: 1px transparent;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#addTodoButton {
+  background-color: #ffffff;
+  border: 1px solid green;
+  margin: 15px;
+  padding: 5px 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#addTodoButton:hover {
+  background-color: green;
+}
+
+.edit {
+    font-weight: bold;
+    color: #4266b3;
+    cursor: pointer;
+  }
+
+.button-update {
+    background-color: orangered;
+}
+  
+.delete-button {
+  cursor: pointer;
+  color: rgb(178, 0, 0);
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+.edit-button {
+  cursor: pointer;
+  color: blue;
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+ul {
+  list-style-type:circle solid;
+  margin: 0px 0 20px 0;
+  padding: 0px 0px 0px 20px;
+}
+
+li {
+    padding: 5px;
+}

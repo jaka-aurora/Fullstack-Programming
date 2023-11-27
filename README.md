@@ -8,7 +8,7 @@ Ratkaisut: https://gitlab.labranet.jamk.fi/AA6111/fullstack
 
 ## Exercises
 
-Exercises points (26.11.23): 104p
+Exercises points (27.11.23): 149p
 
 Total points of exercises:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -57,5 +57,5 @@ Total points of exercises:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 [**WEEK8**](https://gitlab.labranet.jamk.fi/AA6111/fullstack/-/tree/master/Week8):  
 [LAB08E1](Week8\Exercise1): 10/10p  
-[LAB08E2](Week8\Exercise2): 10/10p  
-[LAB08E3](Week8\Exercise3): 5/5p  
+[LAB08E2](Week8\Exercise2):  
+[LAB08E3](Week8\Exercise3):  
