@@ -5,7 +5,7 @@ const port = 3000
 
 const mongoose = require('mongoose')
 
-const mongoDB = 'mongodb+srv://aa6111:WHgVmhfnVJ35t5F0@test.9rvlfjl.mongodb.net/test'
+const mongoDB = 'mongodb+srv://aa6111:value@test.value.mongodb.net/test'
 
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true})
 const db = mongoose.connection
